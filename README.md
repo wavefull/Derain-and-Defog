@@ -14,7 +14,7 @@ Rain streaks can severely degrade the visibility, which causes many current comp
 - Pytorch>=4.1.0
 - Opencv>=3.1.0
 
-## Default Dataset settings
+## Dataset
 Rain100H: [http://www.icst.pku.edu.cn/struct/Projects/joint_rain_removal.html][10]<br>
 Rain800: [https://drive.google.com/drive/folders/0Bw2e6Q0nQQvGbi1xV1Yxd09rY2s][11]
 
@@ -22,11 +22,11 @@ We concatenate the two images(B and O) together as default inputs. If you want t
 Moreover, there should be three folders 'train', 'val', 'test' in the dataset folder.
 After download the datasets, don't forget to transform the format!
 
-Update: Rain100H has updated its testing set, from origin 100 images(test100) to 200(test200) images. We update the performance of RESCAN + GRU as follow:
-
 |         | PSNR  | SSIM  | inference time(Seconds) |
 | :------:| :---: | :---: | :---------------------: | 
 | testA   | 18.92 | 0.65  |          0.004          |
+
+All PSNR and SSIM of results are computed by using skimage.measure. Please use this to evaluate your works.
 
 ## Train, Test and Show
     python train.py
