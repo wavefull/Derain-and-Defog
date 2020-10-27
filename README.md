@@ -33,10 +33,6 @@ All PSNR and SSIM of results are computed by using skimage.measure. Please use t
     python eval.py
     python show.py
 
-## Scripts
-- explore.sh: Show the predicted images in browser
-- config/tensorboard.sh: Open the tensorboard server
-- config/clean.sh: Clear all the training records in the folder
 
 ## Cite
 If you use our code, please refer this repo.
@@ -51,10 +47,4 @@ If you publish your paper that refer to our paper, please cite:
         organization={Springer}  
     }
 
-
-  
-## Recent Works
-- [SDSEN](https://github.com/prismformore/SDSEN) from Hanrong Ye
-- [SPANet](https://github.com/stevewongv/SPANet) from Tianyu Wang
-- [HeavyRainRemoval](https://github.com/liruoteng/HeavyRainRemoval) from Ruoteng Li
 
