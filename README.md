@@ -52,17 +52,17 @@ If you publish your paper that refer to our paper, please cite:
         organization={Springer}  
     }
 
-  [1]: https://xialipku.github.io
-  [2]: https://jlwu1992.github.io
-  [3]: http://cis.pku.edu.cn/faculty/vision/zlin/zlin.htm
-  [4]: http://robotics.pkusz.edu.cn/team/leader/
-  [5]: http://cis.pku.edu.cn/vision/Visual&Robot/people/zha/
-  [6]: ethanlee@pku.edu.cn
-  [7]: jlwu1992@pku.edu.cn
-  [8]: zlin@pku.edu.cn
-  [9]: hongliu@pku.edu.cn
-  [10]: http://www.icst.pku.edu.cn/struct/Projects/joint_rain_removal.html
-  [11]: https://drive.google.com/drive/folders/0Bw2e6Q0nQQvGbi1xV1Yxd09rY2s
+  -[1]: https://xialipku.github.io
+  -[2]: https://jlwu1992.github.io
+ - [3]: http://cis.pku.edu.cn/faculty/vision/zlin/zlin.htm
+ - [4]: http://robotics.pkusz.edu.cn/team/leader/
+ - [5]: http://cis.pku.edu.cn/vision/Visual&Robot/people/zha/
+ - [6]: ethanlee@pku.edu.cn
+ - [7]: jlwu1992@pku.edu.cn
+ - [8]: zlin@pku.edu.cn
+ - [9]: hongliu@pku.edu.cn
+ - [10]: http://www.icst.pku.edu.cn/struct/Projects/joint_rain_removal.html
+  -[11]: https://drive.google.com/drive/folders/0Bw2e6Q0nQQvGbi1xV1Yxd09rY2s
   
 ## Recent Works
 - [SDSEN](https://github.com/prismformore/SDSEN) from Hanrong Ye
