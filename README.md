@@ -13,26 +13,6 @@ Rain streaks can severely degrade the visibility, which causes many current comp
 - Python>=3.6
 - Pytorch>=4.1.0
 - Opencv>=3.1.0
-- tensorboardX
-
-## Project Structure
-- config: contains all codes
-    - cal_ssim.py
-    - clean.sh
-    - dataset.py
-    - main.py
-    - model.py
-    - settings.py
-    - show.py
-    - tensorboard.sh
-- explore.sh
-- logdir: holds patches generated in training process
-- models: holds checkpoints
-- showdir: holds images predicted by the model
-
-## Best Practices
-Hold every experiment in an independent folder, and assign a long name to it.
-We recommend list the important parameters in the folder name, for example: RESCAN.ConvRNN.Full.d_7.c_24(d: depth, c: channel).
 
 ## Default Dataset settings
 Rain100H: [http://www.icst.pku.edu.cn/struct/Projects/joint_rain_removal.html][10]<br>
