@@ -24,10 +24,9 @@ After download the datasets, don't forget to transform the format!
 
 Update: Rain100H has updated its testing set, from origin 100 images(test100) to 200(test200) images. We update the performance of RESCAN + GRU as follow:
 
-|         | PSNR  | SSIM  |
-| :------:| :---: | :---: |
-| test100 | 26.45 | 0.8458 |
-| test200 | 25.92 | 0.8411 |
+|         | PSNR  | SSIM  | inference time(Seconds) |
+| :------:| :---: | :---: | :---------------------: | 
+| testA   | 18.92 | 0.65  |          0.004          |
 
 ## Train, Test and Show
     python train.py
