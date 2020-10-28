@@ -1,4 +1,4 @@
-# Model-driven Multi-task  Network for Image Dehazing and Deraining
+# MDMTN：Model-driven Multi-task  Network for Image Dehazing and Deraining
 
 [Xia Li][1], [Jianlong Wu][2], [Zhouchen Lin][3], [Hong Liu][4], [Hongbin Zha][5]<br>
 
