@@ -1,4 +1,4 @@
-# MDMTN: [Model-driven Multi-task  Network for Image Dehazing and Deraining](http://openaccess.thecvf.com/content_ECCV_2018/papers/Xia_Li_Recurrent_Squeeze-and-Excitation_Context_ECCV_2018_paper.pdf)
+# MDMTN: [Model-driven Multi-task  Network for Image Dehazing and Deraining]
 
 [Xia Li][1], [Jianlong Wu][2], [Zhouchen Lin][3], [Hong Liu][4], [Hongbin Zha][5]<br>
 
