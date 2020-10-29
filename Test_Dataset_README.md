@@ -1,18 +1,17 @@
 
 # Files
 
-* real_test_1000.zip
-* real_test_1000.txt
-* Real_Internet.zip
-* Real_Internet.txt
+* real_test.zip
+* syn_test.zip
+* syn_test.txt
 
 
 
 # Unpack
 
 ```
-$ unzip real_test_1000.zip
-$ unzip real_Internet.zip
+$ unzip real_test.zip
+$ unzip syn_test.zip
 ```
 
 # Citation
