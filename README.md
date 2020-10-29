@@ -28,10 +28,10 @@ After download the datasets, don't forget to transform the format!
 
 All PSNR and SSIM of results are computed by using skimage.measure. Please use this to evaluate your works.
 
-## Train, Test and Show
+## Train, Show and Test
     python train.py
-    python eval.py
     python show.py
+    python test.py
 
 
 ## Cite
