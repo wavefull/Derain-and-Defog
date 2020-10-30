@@ -7,7 +7,7 @@ Key Laboratory of Machine Perception (MOE), School of EECS, Peking University<br
 Cooperative Medianet Innovation Center, Shanghai Jiao Tong University<br>
 {[ethanlee][6], [jlwu1992][7], [zlin][8], [hongliu][9]}@pku.edu.cn, zha@cis.pku.edu.cn
 
-Images captured from rainy outdoors suffer from mani-fest degradation of scene visibility. Although a magnitude of rain removal methods for single image have been proposed and can acheive good deraining results on sythetic data, the failure to function on real-world scene make them struggling to apply in industry. To this issue, we propose a noval rain model consist of two components(rain streak and mist caused by rain accumulation), which render rainy scene by using image fusion technology. Based on this model, we develop a multi-task deep learning network that learns the appearance of rain streaks, the representation of mist and the transparency map in the common Encoder-Decoder framework. Specifically, the fused features of these components is extracted by a cascaded Contextualized Dilated Covolution structure and splited into specific features by a Feature Seperation Module (FSM) we proposed in this network. Extensive experiments on sythetic and real-world datasets demonstrate that the proposed deraining network outperforms the last state-of-the-art networks in terms of accuracy, robustness and runtime. In addtiton, an ablation analysis is conducted to gauge the improvments obtained by different modules in the proposed network.
+
 
 ## Prerequisite
 - Python>=3.6
@@ -18,7 +18,7 @@ Images captured from rainy outdoors suffer from mani-fest degradation of scene v
 Rain100H: [http://www.icst.pku.edu.cn/struct/Projects/joint_rain_removal.html][10]<br>
 Rain800: [https://drive.google.com/drive/folders/0Bw2e6Q0nQQvGbi1xV1Yxd09rY2s][11]
 
-We concatenate the two images(B and L) together as default inputs for training. B is corresponding to background image,L is image whose three channels are corresponding to rain streak ,vapor and transp respectively.
+We concatenate the two images(B and L) together as default inputs for training. B is corresponding to background image,L is image whose three channels are corresponding to rain streak ,vapor and transparency respectively.
 Moreover, there should be three folders 'train', 'test_real', 'test_syn' in the dataset folder.
 
 |         | PSNR  | SSIM  | inference time(Seconds) |
