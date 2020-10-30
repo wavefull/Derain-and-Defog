@@ -18,7 +18,7 @@ Cooperative Medianet Innovation Center, Shanghai Jiao Tong University<br>
 Rain100H: [http://www.icst.pku.edu.cn/struct/Projects/joint_rain_removal.html][10]<br>
 Rain800: [https://drive.google.com/drive/folders/0Bw2e6Q0nQQvGbi1xV1Yxd09rY2s][11]
 
-We concatenate the two images(B and L) together as default inputs for training. B is corresponding to background image,L is image whose three channels are corresponding to rain streak ,vapor and transparency respectively.
+We concatenate the two images(B and L) together as train dataset. B is corresponding to background image,L is an image whose three channels are corresponding to rain streak ,vapor and transparency respectively.
 Moreover, there should be three folders 'train', 'test_real', 'test_syn' in the dataset folder.
 
 |         | PSNR  | SSIM  | inference time(Seconds) |
