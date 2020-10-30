@@ -18,9 +18,8 @@ Images captured from rainy outdoors suffer from mani-fest degradation of scene v
 Rain100H: [http://www.icst.pku.edu.cn/struct/Projects/joint_rain_removal.html][10]<br>
 Rain800: [https://drive.google.com/drive/folders/0Bw2e6Q0nQQvGbi1xV1Yxd09rY2s][11]
 
-We concatenate the two images(B and O) together as default inputs. If you want to change this setting, just modify config/dataset.py.
-Moreover, there should be three folders 'train', 'val', 'test' in the dataset folder.
-After download the datasets, don't forget to transform the format!
+We concatenate the two images(B and L) together as default inputs for training. B is corresponding to background image,L is image whose three channels are corresponding to rain streak ,vapor and transp respectively.
+Moreover, there should be three folders 'train', 'test_real', 'test_syn' in the dataset folder.
 
 |         | PSNR  | SSIM  | inference time(Seconds) |
 | :------:| :---: | :---: | :---------------------: | 
@@ -29,9 +28,24 @@ After download the datasets, don't forget to transform the format!
 All PSNR and SSIM of results are computed by using skimage.measure. Please use this to evaluate your works.
 
 ## Train, Show and Test
-    python train.py
-    python show.py
-    python test.py
+**Train:**
+* Download the dataset(~7.8GB) and unpack it into code folder "../dataset/train". Then, run:
+
+```bash
+$ python train.py
+```
+**Show:**
+* Download the test dataset(~455MB) and unpack it into code folder "../dataset/test". Then, run: 
+
+```
+$ python show.py
+```
+**Test:**
+* Generate syn_test.txt into code folder. Then, run: 
+
+```
+$ python test.py
+```
 
 
 ## Cite
