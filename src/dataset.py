@@ -33,7 +33,7 @@ class TrainValDataset(Dataset):
             O, L = self.crop(img_pair, aug=False)
        
         O = np.transpose(O, (2, 0, 1))
-        L = np.transpose(B, (2, 0, 1))   
+        L = np.transpose(L, (2, 0, 1))   
         sample = {'O': O,'L': L,'idx': idx}
         return sample
 
@@ -61,20 +61,20 @@ class TrainValDataset(Dataset):
         s=L[:,:,0]
         s=s[:,:,np.newaxis]
         s =  np.tile(s, [1, 1, 3])
-        a=L[:,:,1]
-        a=a[:,:,np.newaxis]
-        a = np.tile(a, [1, 1, 3])
+        v=L[:,:,1]
+        v=v[:,:,np.newaxis]
+        v = np.tile(v, [1, 1, 3])
         t=L[:,:,2]
         t=t[:,:,np.newaxis]
         t = np.tile(t, [1, 1, 3])
-        rainimage=B*t+(s+a)*(1-t)
+        rainimage=B*t+(s+v)*(1-t)
         O = rainimage
         return O, L
 
     def flip(self, O, L):
         if self.rand_state.rand() > 0.5:
             O = np.flip(O, axis=1)
-            L = np.flip(B, axis=1)
+            L = np.flip(L, axis=1)
         return O, L
 
     def rotate(self, O, L):
