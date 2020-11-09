@@ -1,4 +1,4 @@
-# MDMTN：Model-driven Multi-task  Network for Image Dehazing and Deraining
+# MFSN：Deep Image Deraining via a Model-Driven Feature Seperation Network
 
 [Xia Li][1], [Jianlong Wu][2], [Zhouchen Lin][3], [Hong Liu][4], [Hongbin Zha][5]<br>
 
@@ -13,6 +13,7 @@ Cooperative Medianet Innovation Center, Shanghai Jiao Tong University<br>
 - Python>=3.6
 - Pytorch>=4.1.0
 - Opencv>=3.1.0
+- tensorboardX
 
 ## Dataset
 Rain100H: [http://www.icst.pku.edu.cn/struct/Projects/joint_rain_removal.html][10]<br>
@@ -23,7 +24,7 @@ Moreover, there should be three folders 'train', 'test_real', 'test_syn' in the 
 
 |         | PSNR  | SSIM  | inference time(Seconds) |
 | :------:| :---: | :---: | :---------------------: | 
-| testA   | 18.92 | 0.65  |          0.004          |
+| testA   | 18.92 | 0.65  |          0.022          |
 
 All PSNR and SSIM of results are computed by using skimage.measure. Please use this to evaluate your works.
 
